@@ -23,7 +23,7 @@ body{
 .login-img{
     position: relative;
     /* background-color: brown; */
-    background-image: url(/straight3.jpg);
+    background-image: url(./straight3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 30%;
