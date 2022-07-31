@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* gap: 7em; */
+    width: 100%;
+    height: 100vh;
+}
+
+.login-img{
+    position: relative;
+    /* background-color: brown; */
+    background-image: url(/images/straight3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+}
+
+#bus{
+    font-size: 0px;
+}
+
+.brand-name{
+    position: absolute;
+    margin-top: 4em;
+    /* height: 100px; */
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color:rgba(252,248,244, 0.8);
+}
+
+.brand-name > span {
+    color: red;
+    text-transform: capitalize;
+}
+
+.reg{
+    font-size: 15px;
+}
+
+.container{
+    width: 70%;
+    margin-top: 10em;
+    margin-left: 6em;
+
+}
+
+.content{
+    width: 50%;
+}
+
+
+
+.transport{
+    background-color:#ECF6FF;
+    width: 40%;
+    border-radius:5px;
+    height: 8vh;
+    margin:20px 0 ;
+}
+
+.transport > p{
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+input{
+    border-top:none ;
+    /* border-right:none ; */
+    border-left:none ;
+    border-width: 1px; 
+    border-bottom-color: rgb(189, 188, 188);
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 1.1em;
+    border-right: none;
+}
+
+label{
+    font-size: 1.1em;
+}
+
+.login-btn{
+    float: right;
+    padding: 10px 30px;
+    color: white;
+    background-color:rgb(36, 48, 64) ;
+    border-radius: 5px;
+    margin-top: -20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border: none;
+}
+
+.login-btn:hover{
+    color:rgb(36, 48, 64) ;
+    background-color: #ECF6FF;
+    box-shadow: 2px 3px ;
+}
+
+.password{
+    clear: left;
+    margin-top: 20px;
+}
+
+.sign-up{
+    margin-top: 30px;
+    color:rgb(127,127,127) ;
+}
+.sign-up > a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+small{
+    font-size: 0.6em;
+    font-weight: 800;
+    margin-left: -8px;
+}
+
+
+@media (max-width: 990px){
+    .login-img{
+        width: 50%;
+    }
+    
+    .container{
+        width: 50%;
+        margin-top: 10em;
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+    }
+    
+    .content{
+        width: 100%;
+    }
+
+   .transport{
+        width: 100%;
+    }
+
+    .transport > p{
+         margin-right: 2em;
+        font-weight: 600;
+    } 
+}
+
+
+
+@media(max-width: 575px) and (min-width: 548px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+    }
+
+    .login-img{
+        width: 100%;
+        height: 90vh;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+    }
+
+    .container{
+        width: 90%;
+        height: 15vh;
+        margin-top: 3em;
+    }
+
+    .brand-name{
+        margin-top: 0;
+    }
+
+    .content{
+        /* width: 80%; */
+        align-items: center;
+        
+    }
+
+    form{
+        padding-bottom: 5em;
+    }
+
+    .sign-up{
+        margin-top: 4em;
+    }
+
+    .transport{
+        width: 100%;
+    }
+
+    .transport > p{
+        text-align: center;
+         /* margin-right: 2em; */
+        font-weight: 600;
+    } 
+
+    input, label{
+        font-size: 1em;
+    }
+
+    
+}
+
+@media (max-width: 548px) {
+   
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+    }
+
+    .login-img{
+        width: 100%;
+        height: 40vh;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+    }
+
+    .container{
+        width: 90%;
+        height: 60vh;
+        margin-top: 1em;
+    }
+
+    .brand-name{
+        margin-top: 0;
+    }
+
+    .content{
+        /* width: 80%; */
+        align-items: center;
+        
+    }
+
+    form{
+        padding-bottom: 5em;
+    }
+
+    .sign-up{
+        margin-top: 4em;
+    }
+
+    .transport{
+        width: 100%;
+    }
+
+    .transport > p{
+        text-align: center;
+         /* margin-right: 2em; */
+        font-weight: 600;
+    } 
+
+    input, label{
+        font-size: 1em;
+    }
+}
