@@ -19,7 +19,7 @@ body{
 .banner{
     position: relative;
     /* background-color: brown; */
-    background-image: url(./images/straight.jpg);
+    background-image: url(./straight.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 30%;
